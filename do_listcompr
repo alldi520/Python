@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+L1 = ['Hello', 'World', 18, 'Apple', None]
+def sss(x):
+    cd = []
+    for x in x:
+        if (isinstance(x, str)) == True:
+            cd.append(x.lower())
+    return cd
+L2 = sss(L1);
+print(L2)
+if L2 == ['hello', 'world', 'apple']:
+    print('测试通过!')
+else:
+    print('测试失败!')
